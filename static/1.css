@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    height: 100%;
+    background-color: rgb(142, 196, 196);
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 13px;}

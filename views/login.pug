@@ -1,0 +1,15 @@
+extends base.pug
+
+block style
+  style
+    include ../static/4.css
+
+block content
+  #container
+    img(src="../static/hat.png", alt="icon", class="icon oh")
+    h1.oh Welcome To Strawhat
+    h2.oh Login here
+    form(action="/login", method="post", id="form")
+      input(type="text", name="name", id="name", placeholder="Enter Your Name/phone number/Email", class="my")
+      input(type="password", name="password", id="pass", placeholder="Enter Your Password", class="my")
+      button#but.my Submit

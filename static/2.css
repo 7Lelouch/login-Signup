@@ -1,0 +1,35 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    
+}
+#login{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background-color: rgb(43, 43, 219);
+    margin: 15px;
+    padding: 8px;
+    padding-left:45px;
+    padding-right:45px;
+    border-radius: 20px;
+}
+#sign{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background-color: rgb(43, 43, 219);
+    margin: 15px;
+    padding: 8px;
+    padding-left:38px;
+    padding-right:38px;
+    border-radius: 20px;
+}
+#hat{
+    background-color:rgb(142, 196, 196);
+    width: 60%;
+}

@@ -1,0 +1,32 @@
+extends base.pug
+
+block style
+  style
+    include ../static/3.css
+
+block content
+  #container
+    img(src="../static/hat.png", alt="icon", class="icon oh")
+    h1.oh Welcome To Strawhat
+    form(action="/signup", method="post", id="form")
+      input(type="text", name="name", id="name", placeholder="Enter your name", class="my")
+      input(type="tel", name="number", id="number", placeholder="Enter your Phone number", class="my", pattern="[6789][0-9]{9}", required)
+      input(type="email", name="email", id="email", placeholder="Enter your Email", class="my")
+      input(type="password", name="password", id="n_pass", placeholder="Enter New Password", class="my", required)
+      input(type="password", name="cpassword", id="c_pass", placeholder="Confirm Password", class="my", required)
+      button#but.my(onclick="return validateForm()") Submit
+
+block script
+  script.
+    function validateForm() {
+      var newPassword = document.getElementById('n_pass').value;
+      var confirmPassword = document.getElementById('c_pass').value;
+
+      if (newPassword !== confirmPassword) {
+        alert('Passwords do not match. Please enter the same password in both fields.');
+        return false;
+      }
+
+      return true;
+    }
+

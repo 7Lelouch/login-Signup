@@ -1,0 +1,15 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/2.css 
+
+block content 
+    section#main
+        a(href="/" ) 
+                img(src="../static/hat.png", alt="icon" , class="icon" id="hat") 
+        a(href="/login" id="login")
+                p Login 
+        a(href="/signup" id="sign")
+                p SignUp 
+        
